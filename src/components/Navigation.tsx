@@ -44,7 +44,6 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <span className="text-brand-primary font-heading text-lg leading-tight block">
                 Neighbor&apos;s Lawn &amp; Garden
@@ -54,7 +53,6 @@ export default function Navigation() {
               </span>
             </Link>
 
-            {/* Desktop center links */}
             <div className="hidden md:flex items-center gap-6">
               {navLinks.map((link) => (
                 <Link
@@ -67,17 +65,21 @@ export default function Navigation() {
               ))}
             </div>
 
-            {/* Desktop right: phone only (community feel — no CTA button) */}
-            <div className="hidden md:flex items-center">
+            <div className="hidden md:flex items-center gap-4">
               <a
                 href="tel:7705550162"
                 className="text-brand-primary font-body font-semibold text-sm hover:text-brand-primary-hover transition-colors"
               >
                 (770) 555-0162
               </a>
+              <Link
+                href="/contact"
+                className="bg-brand-accent hover:bg-brand-accent-hover text-white font-body font-semibold text-sm px-5 py-2.5 rounded-full transition-colors"
+              >
+                Get Estimate
+              </Link>
             </div>
 
-            {/* Mobile right: phone + hamburger */}
             <div className="flex md:hidden items-center gap-3">
               <a
                 href="tel:7705550162"
@@ -100,7 +102,6 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* Mobile drawer overlay */}
       {drawerOpen && (
         <div
           className="fixed inset-0 z-40 bg-black/50 md:hidden"
@@ -109,7 +110,6 @@ export default function Navigation() {
         />
       )}
 
-      {/* Mobile drawer */}
       <div
         style={{ backgroundColor: '#FEFDF8' }}
         className={`fixed top-0 right-0 h-full w-80 max-w-full z-50 shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden ${
@@ -120,7 +120,6 @@ export default function Navigation() {
         aria-label="Navigation menu"
       >
         <div className="flex flex-col h-full">
-          {/* Drawer header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-brand-border">
             <div>
               <p className="text-brand-primary font-heading text-base leading-tight">
@@ -139,7 +138,6 @@ export default function Navigation() {
             </button>
           </div>
 
-          {/* Drawer links */}
           <nav className="flex-1 px-6 py-6 space-y-1">
             {navLinks.map((link) => (
               <Link
@@ -153,7 +151,6 @@ export default function Navigation() {
             ))}
           </nav>
 
-          {/* Drawer footer */}
           <div className="px-6 py-6 border-t border-brand-border">
             <a
               href="tel:7705550162"
