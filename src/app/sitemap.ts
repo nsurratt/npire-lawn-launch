@@ -3,13 +3,6 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://neighborslawn.com'
   const now = new Date()
-
-
-
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
   return [
     { url: base, lastModified: now, priority: 1.0 },
     { url: `${base}/mowing-lawn-care`, lastModified: now, priority: 0.9 },
