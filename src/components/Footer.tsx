@@ -3,17 +3,12 @@ import Link from 'next/link'
 const footerLinks = {
   services: [
     { label: 'Mowing & Lawn Care', href: '/mowing-lawn-care' },
-    { label: 'Landscaping', href: '/landscaping' },
     { label: 'Fertilizer & Weed Control', href: '/fertilizer-weed-control' },
-    { label: 'Aeration & Overseeding', href: '/aeration-overseeding' },
-    { label: 'Pricing', href: '/pricing' },
   ],
   company: [
     { label: 'About Us', href: '/about' },
-    { label: 'Before & After', href: '/before-after' },
     { label: 'Service Areas', href: '/service-areas' },
     { label: 'Reviews', href: '/reviews' },
-    { label: 'FAQ', href: '/faq' },
     { label: 'Contact', href: '/contact' },
   ],
 }
