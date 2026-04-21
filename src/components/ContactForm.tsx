@@ -150,6 +150,17 @@ export default function ContactForm() {
         />
       </div>
 
+      <div className="flex items-start gap-3 pt-1">
+        <input
+          id="consent"
+          type="checkbox"
+          required
+          className="mt-1 w-4 h-4 rounded border-brand-border text-brand-primary focus:ring-brand-primary/40 shrink-0"
+        />
+        <label htmlFor="consent" className="text-brand-text-secondary font-body text-xs leading-relaxed">
+          I consent to receive calls and SMS from this business. Message and data rates may apply. Reply STOP to unsubscribe.
+        </label>
+      </div>
       <button
         type="submit"
         className="w-full bg-brand-accent hover:bg-brand-accent-hover text-white font-body font-semibold py-4 rounded-lg transition-colors text-base"
